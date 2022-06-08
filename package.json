@@ -1,9 +1,9 @@
 {
   "name": "college-website",
   "version": "1.0.0",
-  "homepage": "http://dev-thakku.github.io/college-website-redesign",
+  "homepage": "http://dev-thakku.github.io/college-project",
   "main": "index.html",
-  "repository": "https://github.com/dev-thakku/college-website-redesign.git",
+  "repository": "https://github.com/dev-thakku/college-project.git",
   "author": "dev-thakku <jemshithtk@gmail.com>",
   "license": "MIT",
   "scripts": {
