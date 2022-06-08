@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/college-website-redesign/student-downloads/static/css/main.8befadd8.css",
-    "main.js": "/college-website-redesign/student-downloads/static/js/main.9edb13f1.js",
-    "index.html": "/college-website-redesign/student-downloads/index.html",
-    "main.8befadd8.css.map": "/college-website-redesign/student-downloads/static/css/main.8befadd8.css.map",
-    "main.9edb13f1.js.map": "/college-website-redesign/student-downloads/static/js/main.9edb13f1.js.map"
+    "main.css": "/college-project/student-downloads/static/css/main.8befadd8.css",
+    "main.js": "/college-project/student-downloads/static/js/main.425a5d1b.js",
+    "index.html": "/college-project/student-downloads/index.html",
+    "main.8befadd8.css.map": "/college-project/student-downloads/static/css/main.8befadd8.css.map",
+    "main.425a5d1b.js.map": "/college-project/student-downloads/static/js/main.425a5d1b.js.map"
   },
   "entrypoints": [
     "static/css/main.8befadd8.css",
-    "static/js/main.9edb13f1.js"
+    "static/js/main.425a5d1b.js"
   ]
 }
