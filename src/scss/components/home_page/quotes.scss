@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+
+.quotes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  background: var(--clr-blue-50);
+  color: var(--clr-blue-400);
+
+  & > .quote-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+  
+  & > .icon {
+    color: var(--clr-orange-500);
+    font-size: 26px;
+  }
+
+  & > .quoted-by {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--clr-orange-500);
+
+    &::before {
+      content: '―';
+      margin-right: 5px;
+    }
+  }
+
+  @include max(550px) {
+    & > .quote-content {
+      font-size: 14px;
+    }
+
+    & > .quoted-by {
+      font-size: 12px;
+    }
+  }
+}

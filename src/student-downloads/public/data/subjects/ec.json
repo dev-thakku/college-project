@@ -1,0 +1,72 @@
+{
+  "s1": [
+    { "name": "English for Communication I", "value": "1001" },
+    { "name": "Engineering Mathematics I", "value": "1002" },
+    { "name": "Engineering Physics I", "value": "1003" },
+    { "name": "Engineering Chemistry I", "value": "1004" },
+    { "name": "Health & Physical Education", "value": "1009" },
+    { "name": "Engineering Graphics", "value": "2005" },
+    { "name": "Workshop Practice", "value": "2008" },
+    { "name": "Computing Fundamentals", "value": "1008" },
+    { "name": "Engineering Science Lab I", "value": "2007" }
+  ],
+  "s2": [
+    { "name": "English for Communication II", "value": "2001" },
+    { "name": "Engineering Mathematics II", "value": "2002" },
+    { "name": "Engineering Physics II", "value": "2003" },
+    { "name": "Engineering Chemistry II", "value": "2004" },
+    { "name": "Basic Electronics", "value": "2041" },
+    { "name": "Engineering Graphics", "value": "2005" },
+    { "name": "Workshop Practice", "value": "2008" },
+    { "name": "Engineering Science Lab II", "value": "2007" },
+    { "name": "Basic Electronics Lab", "value": "2049" },
+    { "name": "Life Skill", "value": "2009" }
+  ],
+  "s3": [
+    { "name": "Electrical Technology", "value": "3043" },
+    { "name": "Electronic Devices & Circuits", "value": "3044" },
+    { "name": "Digital Electronics", "value": "3042" },
+    { "name": "Communication Engineering", "value": "3041" },
+    { "name": "Environmental Science & Disaster Management", "value": "3001" },
+    { "name": "Electronics Circuits Lab", "value": "3047" },
+    { "name": "Digital Electronics Lab", "value": "3048" },
+    { "name": "Analogue Communication Lab", "value": "3049" }
+  ],
+  "s4": [
+    { "name": "Linear Integrated Circuits", "value": "4042" },
+    { "name": "Electronics Instruments & Measurements", "value": "4041" },
+    { "name": "Microcontroller and Interfacing", "value": "4043" },
+    { "name": "Programming in C", "value": "4044" },
+    { "name": "Linear Integrated Circuits Lab", "value": "4047" },
+    { "name": "Microcontroller & Interfacing Lab", "value": "4048" },
+    { "name": "Programming in C Lab", "value": "4049" },
+    { "name": "Mini Project", "value": "4009" }
+  ],
+  "s5": [
+    { "name": "Industrial Management & Safety", "value": "5001" },
+    { "name": "Embedded System", "value": "5041" },
+    { "name": "Digital Communication", "value": "5201" },
+    { "name": "Control System", "value": "5043" },
+    { "name": "Medical Electronics", "value": "5044" },
+    { "name": "Optical Fibre Communication", "value": "5045" },
+    { "name": "Embedded System Lab", "value": "5049" },
+    { "name": "Digital Communication Lab", "value": "5209" },
+    { "name": "PCB & Spice Lab", "value": "5047" },
+    {
+      "name": "Industrial Training/Industrial Visit/Collaborative work",
+      "value": "5009"
+    }
+  ],
+  "s6": [
+    { "name": "Project & Seminar", "value": "6009" },
+    { "name": "Communication Systems", "value": "6042" },
+    { "name": "Computer Hardware & Networking", "value": "6043" },
+    { "name": "Advanced Microprocessors", "value": "6041" },
+    { "name": "Radar and Navigation", "value": "6045" },
+    { "name": "Television Engineering", "value": "6046" },
+    { "name": "Digital Signal Processing", "value": "6044" },
+    { "name": "Computer Hardware and Networking Lab", "value": "6049" },
+    { "name": "HDL and Simulation Software Lab", "value": "6048" },
+    { "name": "Project & Seminar", "value": "6009" }
+  ]
+}

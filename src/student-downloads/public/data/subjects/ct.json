@@ -1,0 +1,62 @@
+{
+  "s1": [
+    { "name": "English for Communication I", "value": "1001" },
+    { "name": "Engineering Mathematics I", "value": "1002" },
+    { "name": "Engineering Physics I", "value": "1003" },
+    { "name": "Engineering Chemistry I", "value": "1004" },
+    { "name": "Health & Physical Education", "value": "1009" },
+    { "name": "Engineering Graphics", "value": "2005" },
+    { "name": "Workshop Practice", "value": "2008" },
+    { "name": "Computing Fundamentals", "value": "1008" },
+    { "name": "Engineering Science Lab I", "value": "2007" }
+  ],
+  "s2": [
+    { "name": "English for Communication II", "value": "2001" },
+    { "name": "Engineering Mathematics II", "value": "2002" },
+    { "name": "Engineering Physics II", "value": "2003" },
+    { "name": "Engineering Chemistry II", "value": "2004" },
+    { "name": "Programming in C", "value": "2131" },
+    { "name": "Engineering Graphics", "value": "2005" },
+    { "name": "Workshop Practice", "value": "2008" },
+    { "name": "Engineering Science Lab II", "value": "2007" },
+    { "name": "Life Skill", "value": "2009" }
+  ],
+  "s3": [
+    { "name": "Digital Computer Principles", "value": "3133" },
+    { "name": "Objected Oriented Programming through C++", "value": "3134" },
+    { "name": "Computer Architecture", "value": "3131" },
+    { "name": "Database Management System", "value": "3132" },
+    { "name": "Environmental Science & Disaster Management", "value": "3001" }
+  ],
+  "s4": [
+    { "name": "Data Communication", "value": "4132" },
+    { "name": "Operating Systems", "value": "4134" },
+    { "name": "Data Structures", "value": "4133" },
+    { "name": "Computer System Hardware", "value": "4131" },
+    { "name": "System Administration Lab", "value": "4139" },
+    { "name": "Application Development using Java", "value": "4136" }
+  ],
+  "s5": [
+    { "name": "Project Management & Software Engineering", "value": "5132" },
+    { "name": "Web Programming", "value": "5133" },
+    { "name": "Microprocessor and Interfacing", "value": "5131" },
+    { "name": "Information Security", "value": "5136" },
+    { "name": "Ethical Hacking", "value": "5135" },
+    { "name": "Cloud Computing", "value": "5134" },
+    {
+      "name": "Industrial Training/Visit",
+      "value": "5009"
+    },
+    { "name": "Computer Network Engineering Lab", "value": "5137" }
+  ],
+  "s6": [
+    { "name": "Project & Seminar", "value": "6009" },
+    { "name": "Microcontrollers", "value": "6132" },
+    { "name": "Computer Networks", "value": "6131" },
+    { "name": "Smart Device Programming", "value": "6133" },
+    { "name": "Mobile Communication", "value": "6134" },
+    { "name": "Network Infrastructure Mangagement", "value": "6135" },
+    { "name": "Software Testing", "value": "6136" },
+    { "name": "Project & Seminar", "value": "6009" }
+  ]
+}

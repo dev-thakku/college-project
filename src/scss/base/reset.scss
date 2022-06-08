@@ -1,0 +1,37 @@
+:root {
+  --clr-blue-50: #d9f4fe;
+  --clr-blue-100: #a8dbee;
+  --clr-blue-400: #005796;
+  --clr-blue-500: #01416f;
+  --clr-orange-100: rgba(247, 148, 29, 0.26);
+  --clr-orange-400: #ffa63a;
+  --clr-orange-500: #f7941d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  // width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}

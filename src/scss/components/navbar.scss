@@ -1,0 +1,125 @@
+@use '../utils' as *;
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--clr-blue-400);
+  color: #fff;
+  list-style: none;
+
+  @include max(md) {
+    display: flex;
+    max-height: 0;
+    flex-direction: column;
+    align-items: unset;
+    width: 100%;
+    overflow: hidden;
+    transition: .4s;
+
+    &.show {
+      max-height: 1060px;
+    }
+  }
+}
+
+.nav-item {
+  position: relative;
+  padding: 0rem 1rem;
+  font-size: 14px;
+  font-weight: 600;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: var(--clr-orange-500);
+    transform-origin: center;
+    transition: all 120ms ease-in-out;
+  }
+
+  & > a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  &:hover {
+    &::after {
+      transform-origin: center;
+      width: 100%;
+    }
+  }
+
+  &.active {
+    background: var(--clr-orange-500);
+    color: #fff;
+  }
+
+  @include max(md) {
+    & > a {
+      width: 100%;
+    }
+  }
+}
+
+.nav-item.dropdown {
+  position: relative;
+  max-height: 35px;
+  line-height: 35px;
+  transition: max-height 560ms ease-in-out;
+
+  &::after {
+    display: none;
+  }
+
+  & > button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  & > .dropdown {
+    &-items {
+      // display: none;
+      max-height: 0;
+      position: absolute;
+      left: 0;
+      background: var(--clr-blue-400);
+      list-style: none;
+      min-width: 125px;
+      width: max-content;
+      z-index: 9999;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-35px);
+      transition: max-height 560ms ease-in-out, all 0.3s;
+      pointer-events: none;
+
+      @include max(md) {
+        position: relative;
+      }
+    }
+  }
+
+  &.show {
+    max-height: 5000px;
+    & > .dropdown {
+      &-items {
+        max-height: 5000px;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: all;
+      }
+    }
+  }
+}

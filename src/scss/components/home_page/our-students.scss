@@ -1,0 +1,56 @@
+@use '../../utils' as *;
+
+
+.our-students-section {
+  padding: 1rem;
+  background: #f3f3f3;
+
+  &-title {
+    margin-bottom: 2rem;
+    & > h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #9a9a9a;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .company-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    .company-scroll {
+      display: flex;
+      align-items: center;
+      animation: scroll 15s linear infinite;
+      animation-play-state: inherit;
+
+      .company-logo {
+        margin-inline: 2.5rem;
+        width: 80px;
+
+        @include max(sm) {
+          width: 65px;
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    }
+  }
+}
