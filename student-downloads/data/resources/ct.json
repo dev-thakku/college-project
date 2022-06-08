@@ -1,0 +1,132 @@
+{
+  "s1": [
+    {
+      "name": "Chemistry Lab-Manual",
+      "subject": { "name": "Engineering Chemistry I", "value": "1004" },
+      "type": "lab-manual",
+      "size": "1,049 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/2007-C.pdf"
+    },
+    {
+      "name": "Physics Lab-Manual",
+      "subject": { "name": "Engineering Physics I", "value": "1003" },
+      "type": "lab-manual",
+      "size": "1,070 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/2007-P.pdf"
+    },
+    {
+      "name": "Workshop Practice",
+      "subject": { "name": "Workshop Practice", "value": "2008" },
+      "type": "lab-manual",
+      "size": "3.7 MB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/2008.pdf"
+    }
+  ],
+  "s2": [
+    {
+      "name": "Chemistry Lab-Manual",
+      "subject": { "name": "Engineering Chemistry II", "value": "2004" },
+      "type": "lab-manual",
+      "size": "1,049 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/2007-C.pdf"
+    },
+    {
+      "name": "Physics Lab-Manual",
+      "subject": { "name": "Engineering Physics II", "value": "2003" },
+      "type": "lab-manual",
+      "size": "1,070 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/2007-P.pdf"
+    },
+    {
+      "name": "Workshop Practice",
+      "subject": { "name": "Workshop Practice", "value": "2008" },
+      "type": "lab-manual",
+      "size": "3.7 MB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/2008.pdf"
+    }
+  ],
+  "s3": [
+    {
+      "name": "Objected Oriented Programming Lab",
+      "subject": {
+        "name": "Objected Oriented Programming through C++",
+        "value": "3134"
+      },
+      "type": "lab-manual",
+      "size": "1,152 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/3137.pdf"
+    },
+    {
+      "name": "Database Management System Lab",
+      "subject": { "name": "Database Management System", "value": "3132" },
+      "type": "lab-manual",
+      "size": "1,062 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/3139.pdf"
+    }
+  ],
+  "s4": [
+    {
+      "name": "Computer System Hardware Lab",
+      "subject": { "name": "Computer System Hardware", "value": "4131" },
+      "type": "lab-manual",
+      "size": "1,232 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/4137.pdf"
+    },
+    {
+      "name": "Data Structures Lab",
+      "subject": { "name": "Data Structures", "value": "4133" },
+      "type": "lab-manual",
+      "size": "857 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/4138.pdf"
+    },
+    {
+      "name": "System Administration Lab",
+      "subject": { "name": "System Administration Lab", "value": "4139" },
+      "type": "lab-manual",
+      "size": "606 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/4139.pdf"
+    }
+  ],
+  "s5": [
+    {
+      "name": "Computer Network Engineering Lab",
+      "subject": {
+        "name": "Computer Network Engineering Lab",
+        "value": "5137"
+      },
+      "type": "lab-manual",
+      "size": "1,232 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/5137.pdf"
+    },
+    {
+      "name": "Microprocessor Lab",
+      "subject": { "name": "Microprocessor and Interfacing", "value": "5131" },
+      "type": "lab-manual",
+      "size": "857 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/5138.pdf"
+    },
+    {
+      "name": "Web Programming Lab",
+      "subject": { "name": "Web Programming", "value": "5133" },
+      "type": "lab-manual",
+      "size": "606 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/5139.pdf"
+    }
+  ],
+  "s6": [
+    {
+      "name": "Smart Device Programming Lab",
+      "subject": { "name": "Smart Device Programming", "value": "6133" },
+      "type": "lab-manual",
+      "size": "1,232 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/6138.pdf"
+    },
+    {
+      "name": "Microcontroller Lab",
+      "subject": { "name": "Microcontrollers", "value": "6132" },
+      "type": "lab-manual",
+      "size": "606 KB",
+      "url": "https://gptcperumbavoor.ac.in/gptcpbvr/Materials/Lab/6139.pdf"
+    }
+  ]
+}

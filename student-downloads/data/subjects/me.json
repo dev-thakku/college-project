@@ -1,0 +1,76 @@
+{
+  "s1": [
+    { "name": "English for Communication I", "value": "1001" },
+    { "name": "Engineering Mathematics I", "value": "1002" },
+    { "name": "Engineering Physics I", "value": "1003" },
+    { "name": "Engineering Chemistry I", "value": "1004" },
+    { "name": "Health & Physical Education", "value": "1009" },
+    { "name": "Engineering Graphics", "value": "2005" },
+    { "name": "Workshop Practice", "value": "2008" },
+    { "name": "Computing Fundamentals", "value": "1008" },
+    { "name": "Engineering Science Lab I", "value": "2007" }
+  ],
+  "s2": [
+    { "name": "English for Communication II", "value": "2001" },
+    { "name": "Engineering Mathematics II", "value": "2002" },
+    { "name": "Engineering Physics II", "value": "2003" },
+    { "name": "Engineering Chemistry II", "value": "2004" },
+    { "name": "Basic Mechanical Engineering", "value": "2021" },
+    { "name": "Engineering Graphics", "value": "2005" },
+    { "name": "Workshop Practice", "value": "2008" },
+    { "name": "Engineering Science Lab II", "value": "2007" },
+    { "name": "Basic Mechanical Engineering Lab", "value": "2029" },
+    { "name": "Life Skill", "value": "2009" }
+  ],
+  "s3": [
+    { "name": "Electrical & Electronics Engg.", "value": "3021" },
+    { "name": "Manufacturing Process", "value": "3023" },
+    { "name": "Fluid Mechanics & Pneumatics", "value": "3022" },
+    { "name": "Machine Drawing", "value": "3024" },
+    { "name": "Environmental Science & Disaster Management", "value": "3001" },
+    { "name": "Workshop Practice III", "value": "3027" },
+    { "name": "Fluid Mechanics Lab", "value": "3029" },
+    { "name": "Electrical Technology Lab", "value": "3028" }
+  ],
+  "s4": [
+    { "name": "Metullurgy & Machine Tools", "value": "4023" },
+    { "name": "Automobile Engineering", "value": "4022" },
+    { "name": "Applied Mechanics and Strength of Materials", "value": "4021" },
+    { "name": "Thermal Engineering", "value": "4024" },
+    { "name": "Production Drawing", "value": "4026" },
+    { "name": "Workshop Practice IV & Mini Project", "value": "4029" },
+    { "name": "Material Testing Lab", "value": "4028" },
+    { "name": "Heat Engines Lab", "value": "4027" }
+  ],
+  "s5": [
+    { "name": "Industrial Management & Safety", "value": "5001" },
+    { "name": "Design of Machine Elements", "value": "5021" },
+    { "name": "Industrial Engineering", "value": "5022" },
+    { "name": "Power Plant Engineering", "value": "5023" },
+    { "name": "Alternate Energy Sources and Management", "value": "5024" },
+    { "name": "Material Handling", "value": "5025" },
+    {
+      "name": "Industrial Maintenance and Servicing Laboratory",
+      "value": "5028"
+    },
+    { "name": "Machine Shop Practice", "value": "5029" },
+    { "name": "CADD Lab I", "value": "5027" },
+    {
+      "name": "Industrial Training/Industrial Visit/Collaborative work",
+      "value": "5009"
+    }
+  ],
+  "s6": [
+    { "name": "Project & Seminar", "value": "6009" },
+    { "name": "Hydraulic Machines", "value": "6022" },
+    { "name": "Advanced Production Processes", "value": "6021" },
+    { "name": "Refrigeration & Air Conditioning", "value": "6023" },
+    { "name": "Industrial Automation & Mechatronics", "value": "6025" },
+    { "name": "CAD-CAM", "value": "6024" },
+    { "name": "Maintenance Engineering", "value": "6026" },
+    { "name": "CADD Lab II", "value": "6028" },
+    { "name": "Advanced Machine Tool Laboratory", "value": "6029" },
+    { "name": "Hydraulic Machines and Fluid Power Lab", "value": "6027" },
+    { "name": "Project & Seminar", "value": "6009" }
+  ]
+}
