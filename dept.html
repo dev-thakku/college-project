@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/styles.min.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-177392111-3"
     ></script>
@@ -39,18 +39,19 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-177392111-3");
-    </script>
+      gtag('config', 'UA-177392111-3');
+    </script> -->
 
     <script type="text/javascript">
-      window.addEventListener("load", function () {
-        const preloader = document.querySelector(".preloader");
-        preloader.className += " hidden";
-        document.body.classList.remove("loading");
+      window.addEventListener('load', function () {
+        const preloader = document.querySelector('.preloader');
+        preloader.className += ' hidden';
+        document.body.classList.remove('loading');
       });
     </script>
+    <script defer src="js/dept.js"></script>
     <style>
       body.loading {
         overflow: hidden;
@@ -532,6 +533,12 @@
               <li class="nav-item">
                 <a href="dept.html?type=4">Mechanical Engineering</a>
               </li>
+              <li class="nav-item">
+                <a href="dept.html?type=5">General Workshop</a>
+              </li>
+              <li class="nav-item">
+                <a href="dept.html?type=6">Library</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -563,13 +570,333 @@
         <img id="dept-image" src="images/about-banner.jpg" alt="banner" />
       </div>
       <div class="title">
-        <h1 id="dept-title">About Us</h1>
+        <h1 id="dept-title">Depatments</h1>
       </div>
     </section>
 
-    <main class="content" id="content">
-      <h2 id="title-container"></h2>
-      <div id="content"></div>
+    <main class="dept-main">
+      <nav class="sec-nav">
+        <ul>
+          <li class="tab-link" data-tab-name="about">
+            <i class="fas fa-info"></i><span>About</span>
+          </li>
+          <li class="tab-link" data-tab-name="vision">
+            <i class="fas fa-binoculars"></i><span>Vision</span>
+          </li>
+          <li class="tab-link" data-tab-name="facilities">
+            <i class="fas fa-building"></i><span>Facilities</span>
+          </li>
+          <li class="tab-link" data-tab-name="faculties">
+            <i class="fas fa-chalkboard-teacher"></i><span>Faculties</span>
+          </li>
+        </ul>
+      </nav>
+      <section class="courses-section" id="courses">
+        <div class="courses-section-title">
+          <h2>
+            <!-- <span>Find a Diploma Course</span> -->
+            OUR DEPARTMENTS
+          </h2>
+        </div>
+        <div class="courses-section-feed">
+          <!-- Course-CT -->
+          <div class="course" data-aos="fade-right">
+            <div class="course-thumbnail">
+              <img
+                src="images/ct-course-thumb.png"
+                alt="Computer Engineering"
+              />
+            </div>
+            <div class="course-details">
+              <h2 class="course-title">Computer Engineering</h2>
+              <p class="course-description">
+                The computer engineering programme is a sought-after course by
+                engineering aspirants because of the employment potential that
+                it offers in today&lsquo;s world. Students learn to design,
+                implement, and manage information systems in various industries.
+              </p>
+              <table class="course-table">
+                <tr>
+                  <th>
+                    <svg
+                      width="41"
+                      height="34"
+                      viewBox="0 0 41 34"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 21.7339V24.1125H1.71751V34H25.2121V24.1125H26.8636V21.7339H0Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M26.2691 25.5583V30.3155H32.1923V20.4746H33.9098V18.0261H20.4119V20.4746H28.0526V25.5583H26.2691Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M27.348 14.3182V16.7202H35.0988V21.7339H33.3153V26.561H39.1724V16.7202H41V14.3182H27.348Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M30.4968 3.24143C30.4968 5.03162 29.1265 6.48285 27.4361 6.48285C25.7457 6.48285 24.3754 5.03162 24.3754 3.24143C24.3754 1.45124 25.7457 0 27.4361 0C29.1265 0 30.4968 1.45124 30.4968 3.24143Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M23.4946 6.92593C23.4946 8.71612 22.1243 10.1674 20.4339 10.1674C18.7436 10.1674 17.3733 8.71612 17.3733 6.92593C17.3733 5.13574 18.7436 3.6845 20.4339 3.6845C22.1243 3.6845 23.4946 5.13574 23.4946 6.92593Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M16.4925 10.6571C16.4925 12.4473 15.1222 13.8985 13.4318 13.8985C11.7414 13.8985 10.3711 12.4473 10.3711 10.6571C10.3711 8.86687 11.7414 7.41564 13.4318 7.41564C15.1222 7.41564 16.4925 8.86687 16.4925 10.6571Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M11.3042 15.448C7.0728 14.8895 6.69239 18.5664 7.03111 20.4746H13.4106L13.4098 20.4979H19.1568C19.4431 18.5857 19.1216 14.9012 15.5456 15.4609C15.5456 15.4609 14.2944 16.1126 13.6133 16.6612C12.8127 16.1107 11.3042 15.448 11.3042 15.448Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M16.2994 14.225C16.1564 14.225 16.0151 14.2325 15.8759 14.2471C16.7434 13.7512 17.3331 12.7803 17.3343 11.6634C17.6468 11.6517 17.9865 11.6682 18.3555 11.7169C18.3555 11.7169 19.8641 12.3795 20.6646 12.9301C21.3457 12.3815 22.597 11.7298 22.597 11.7298C26.1729 11.1701 26.4944 14.8546 26.2081 16.7668H20.4611L20.4619 16.7435H20.0459C19.4237 15.2625 17.9805 14.225 16.2994 14.225Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M23.2575 10.6804C23.1145 10.6804 22.9733 10.6879 22.8341 10.7025C23.7015 10.2066 24.2912 9.23573 24.2924 8.11885C24.6049 8.10712 24.9446 8.12361 25.3136 8.17232C25.3136 8.17232 26.8222 8.83493 27.6227 9.38552C28.3038 8.83691 29.5551 8.18518 29.5551 8.18518C33.131 7.62551 33.4525 11.31 33.1662 13.2222H27.4192L27.42 13.1989H27.004C26.3818 11.718 24.9386 10.6804 23.2575 10.6804Z"
+                        fill="#F7941D"
+                      />
+                    </svg>
+                  </th>
+                  <th>Intake</th>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <th>
+                    <svg
+                      width="37"
+                      height="34"
+                      viewBox="0 0 37 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0436 6.43018C18.2093 6.43018 17.5372 7.10526 17.5372 7.93498V17.9368C17.5372 18.7703 18.213 19.4416 19.0436 19.4416H29.6566C30.491 19.4416 31.163 18.7665 31.163 17.9368C31.163 17.1033 30.4872 16.432 29.6566 16.432H20.5501V7.93875C20.5501 7.10526 19.878 6.43018 19.0436 6.43018Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M19.9838 0C10.6016 0 2.97133 7.62596 2.97133 16.9981H0L4.51173 22.4479L9.02725 16.9981H5.98796C5.98796 9.28919 12.2666 3.01342 19.9876 3.01342C27.7047 3.01342 33.9871 9.28541 33.9871 16.9981C33.9871 24.707 27.7085 30.9828 19.9876 30.9828C15.3437 30.9828 11.0094 28.6784 8.39673 24.8164C7.92857 24.1262 6.99224 23.9452 6.30133 24.4129C5.61041 24.8805 5.42918 25.8159 5.89735 26.506C9.07255 31.1978 14.3394 34 19.9876 34C29.3659 33.9962 37 26.3703 37 16.9981C37 7.62596 29.3659 0 19.9838 0Z"
+                        fill="#F7941D"
+                      />
+                    </svg>
+                  </th>
+                  <th>Duration</th>
+                  <td>3 Years</td>
+                </tr>
+              </table>
+              <div class="course-actions">
+                <a href="dept.html?type=2" class="btn-primary">
+                  Learn More <i class="fas fa-arrow-right icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course-EC -->
+          <div class="course" data-aos="fade-left" data-aos-delay="50">
+            <div class="course-thumbnail">
+              <img
+                src="images/ec-course-thumb.jpg"
+                alt="Electronics & Communication Engg."
+              />
+            </div>
+            <div class="course-details">
+              <h2 class="course-title">Electronics & Communication Engg.</h2>
+              <p class="course-description">
+                The three year&lsquo;s course is designed to provide a broad
+                foundation in electrical and electronics engineering and its
+                different applications such as the generation, storage and
+                distribution of electricity, semiconductor technology and
+                computer aided drafting.
+              </p>
+              <table class="course-table">
+                <tr>
+                  <th>
+                    <svg
+                      width="41"
+                      height="34"
+                      viewBox="0 0 41 34"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 21.7339V24.1125H1.71751V34H25.2121V24.1125H26.8636V21.7339H0Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M26.2691 25.5583V30.3155H32.1923V20.4746H33.9098V18.0261H20.4119V20.4746H28.0526V25.5583H26.2691Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M27.348 14.3182V16.7202H35.0988V21.7339H33.3153V26.561H39.1724V16.7202H41V14.3182H27.348Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M30.4968 3.24143C30.4968 5.03162 29.1265 6.48285 27.4361 6.48285C25.7457 6.48285 24.3754 5.03162 24.3754 3.24143C24.3754 1.45124 25.7457 0 27.4361 0C29.1265 0 30.4968 1.45124 30.4968 3.24143Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M23.4946 6.92593C23.4946 8.71612 22.1243 10.1674 20.4339 10.1674C18.7436 10.1674 17.3733 8.71612 17.3733 6.92593C17.3733 5.13574 18.7436 3.6845 20.4339 3.6845C22.1243 3.6845 23.4946 5.13574 23.4946 6.92593Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M16.4925 10.6571C16.4925 12.4473 15.1222 13.8985 13.4318 13.8985C11.7414 13.8985 10.3711 12.4473 10.3711 10.6571C10.3711 8.86687 11.7414 7.41564 13.4318 7.41564C15.1222 7.41564 16.4925 8.86687 16.4925 10.6571Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M11.3042 15.448C7.0728 14.8895 6.69239 18.5664 7.03111 20.4746H13.4106L13.4098 20.4979H19.1568C19.4431 18.5857 19.1216 14.9012 15.5456 15.4609C15.5456 15.4609 14.2944 16.1126 13.6133 16.6612C12.8127 16.1107 11.3042 15.448 11.3042 15.448Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M16.2994 14.225C16.1564 14.225 16.0151 14.2325 15.8759 14.2471C16.7434 13.7512 17.3331 12.7803 17.3343 11.6634C17.6468 11.6517 17.9865 11.6682 18.3555 11.7169C18.3555 11.7169 19.8641 12.3795 20.6646 12.9301C21.3457 12.3815 22.597 11.7298 22.597 11.7298C26.1729 11.1701 26.4944 14.8546 26.2081 16.7668H20.4611L20.4619 16.7435H20.0459C19.4237 15.2625 17.9805 14.225 16.2994 14.225Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M23.2575 10.6804C23.1145 10.6804 22.9733 10.6879 22.8341 10.7025C23.7015 10.2066 24.2912 9.23573 24.2924 8.11885C24.6049 8.10712 24.9446 8.12361 25.3136 8.17232C25.3136 8.17232 26.8222 8.83493 27.6227 9.38552C28.3038 8.83691 29.5551 8.18518 29.5551 8.18518C33.131 7.62551 33.4525 11.31 33.1662 13.2222H27.4192L27.42 13.1989H27.004C26.3818 11.718 24.9386 10.6804 23.2575 10.6804Z"
+                        fill="#F7941D"
+                      />
+                    </svg>
+                  </th>
+                  <th>Intake</th>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <th>
+                    <svg
+                      width="37"
+                      height="34"
+                      viewBox="0 0 37 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0436 6.43018C18.2093 6.43018 17.5372 7.10526 17.5372 7.93498V17.9368C17.5372 18.7703 18.213 19.4416 19.0436 19.4416H29.6566C30.491 19.4416 31.163 18.7665 31.163 17.9368C31.163 17.1033 30.4872 16.432 29.6566 16.432H20.5501V7.93875C20.5501 7.10526 19.878 6.43018 19.0436 6.43018Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M19.9838 0C10.6016 0 2.97133 7.62596 2.97133 16.9981H0L4.51173 22.4479L9.02725 16.9981H5.98796C5.98796 9.28919 12.2666 3.01342 19.9876 3.01342C27.7047 3.01342 33.9871 9.28541 33.9871 16.9981C33.9871 24.707 27.7085 30.9828 19.9876 30.9828C15.3437 30.9828 11.0094 28.6784 8.39673 24.8164C7.92857 24.1262 6.99224 23.9452 6.30133 24.4129C5.61041 24.8805 5.42918 25.8159 5.89735 26.506C9.07255 31.1978 14.3394 34 19.9876 34C29.3659 33.9962 37 26.3703 37 16.9981C37 7.62596 29.3659 0 19.9838 0Z"
+                        fill="#F7941D"
+                      />
+                    </svg>
+                  </th>
+                  <th>Duration</th>
+                  <td>3 Years</td>
+                </tr>
+              </table>
+              <div class="course-actions">
+                <a href="dept.html?type=3" class="btn-primary">
+                  Learn More <i class="fas fa-arrow-right icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course-MECH -->
+          <div class="course" data-aos="fade-right" data-aos-delay="75">
+            <div class="course-thumbnail">
+              <img
+                src="images/mech-course-thumb.jpg"
+                alt="Mechanical Engineering"
+              />
+            </div>
+            <div class="course-details">
+              <h2 class="course-title">Mechanical Engineering</h2>
+              <p class="course-description">
+                The courses of the mechanical engineering department have been
+                formulated to give a strong insight in mechanical engineering
+                for the students. Further, students are encouraged to put their
+                minds into projects to apply the skills that they have already
+                learned.
+              </p>
+              <table class="course-table">
+                <tr>
+                  <th>
+                    <svg
+                      width="41"
+                      height="34"
+                      viewBox="0 0 41 34"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 21.7339V24.1125H1.71751V34H25.2121V24.1125H26.8636V21.7339H0Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M26.2691 25.5583V30.3155H32.1923V20.4746H33.9098V18.0261H20.4119V20.4746H28.0526V25.5583H26.2691Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M27.348 14.3182V16.7202H35.0988V21.7339H33.3153V26.561H39.1724V16.7202H41V14.3182H27.348Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M30.4968 3.24143C30.4968 5.03162 29.1265 6.48285 27.4361 6.48285C25.7457 6.48285 24.3754 5.03162 24.3754 3.24143C24.3754 1.45124 25.7457 0 27.4361 0C29.1265 0 30.4968 1.45124 30.4968 3.24143Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M23.4946 6.92593C23.4946 8.71612 22.1243 10.1674 20.4339 10.1674C18.7436 10.1674 17.3733 8.71612 17.3733 6.92593C17.3733 5.13574 18.7436 3.6845 20.4339 3.6845C22.1243 3.6845 23.4946 5.13574 23.4946 6.92593Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M16.4925 10.6571C16.4925 12.4473 15.1222 13.8985 13.4318 13.8985C11.7414 13.8985 10.3711 12.4473 10.3711 10.6571C10.3711 8.86687 11.7414 7.41564 13.4318 7.41564C15.1222 7.41564 16.4925 8.86687 16.4925 10.6571Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M11.3042 15.448C7.0728 14.8895 6.69239 18.5664 7.03111 20.4746H13.4106L13.4098 20.4979H19.1568C19.4431 18.5857 19.1216 14.9012 15.5456 15.4609C15.5456 15.4609 14.2944 16.1126 13.6133 16.6612C12.8127 16.1107 11.3042 15.448 11.3042 15.448Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M16.2994 14.225C16.1564 14.225 16.0151 14.2325 15.8759 14.2471C16.7434 13.7512 17.3331 12.7803 17.3343 11.6634C17.6468 11.6517 17.9865 11.6682 18.3555 11.7169C18.3555 11.7169 19.8641 12.3795 20.6646 12.9301C21.3457 12.3815 22.597 11.7298 22.597 11.7298C26.1729 11.1701 26.4944 14.8546 26.2081 16.7668H20.4611L20.4619 16.7435H20.0459C19.4237 15.2625 17.9805 14.225 16.2994 14.225Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M23.2575 10.6804C23.1145 10.6804 22.9733 10.6879 22.8341 10.7025C23.7015 10.2066 24.2912 9.23573 24.2924 8.11885C24.6049 8.10712 24.9446 8.12361 25.3136 8.17232C25.3136 8.17232 26.8222 8.83493 27.6227 9.38552C28.3038 8.83691 29.5551 8.18518 29.5551 8.18518C33.131 7.62551 33.4525 11.31 33.1662 13.2222H27.4192L27.42 13.1989H27.004C26.3818 11.718 24.9386 10.6804 23.2575 10.6804Z"
+                        fill="#F7941D"
+                      />
+                    </svg>
+                  </th>
+                  <th>Intake</th>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <th>
+                    <svg
+                      width="37"
+                      height="34"
+                      viewBox="0 0 37 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0436 6.43018C18.2093 6.43018 17.5372 7.10526 17.5372 7.93498V17.9368C17.5372 18.7703 18.213 19.4416 19.0436 19.4416H29.6566C30.491 19.4416 31.163 18.7665 31.163 17.9368C31.163 17.1033 30.4872 16.432 29.6566 16.432H20.5501V7.93875C20.5501 7.10526 19.878 6.43018 19.0436 6.43018Z"
+                        fill="#F7941D"
+                      />
+                      <path
+                        d="M19.9838 0C10.6016 0 2.97133 7.62596 2.97133 16.9981H0L4.51173 22.4479L9.02725 16.9981H5.98796C5.98796 9.28919 12.2666 3.01342 19.9876 3.01342C27.7047 3.01342 33.9871 9.28541 33.9871 16.9981C33.9871 24.707 27.7085 30.9828 19.9876 30.9828C15.3437 30.9828 11.0094 28.6784 8.39673 24.8164C7.92857 24.1262 6.99224 23.9452 6.30133 24.4129C5.61041 24.8805 5.42918 25.8159 5.89735 26.506C9.07255 31.1978 14.3394 34 19.9876 34C29.3659 33.9962 37 26.3703 37 16.9981C37 7.62596 29.3659 0 19.9838 0Z"
+                        fill="#F7941D"
+                      />
+                    </svg>
+                  </th>
+                  <th>Duration</th>
+                  <td>3 Years</td>
+                </tr>
+              </table>
+              <div class="course-actions">
+                <a href="dept.html?type=4" class="btn-primary">
+                  Learn More <i class="fas fa-arrow-right icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content" id="content"></section>
     </main>
 
     <footer>
@@ -1056,6 +1383,5 @@
     <a href="#" class="scroll-top-btn"><i class="fas fa-arrow-up"></i></a>
 
     <script src="js/main.min.js"></script>
-    <script defer src="js/dept.js"></script>
   </body>
 </html>
