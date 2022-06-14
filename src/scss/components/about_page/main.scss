@@ -1,6 +1,12 @@
 @use '../../utils' as *;
 
-main.content {
+#content.content {
+  padding-left: 3rem !important;
+}
+
+main.content,
+#content.content {
+  width: 100%;
   margin-top: 1rem;
   padding: 2rem;
 
@@ -36,6 +42,23 @@ main.content {
     }
   }
 
+  h4 {
+    font-size: 1.9rem;
+    color: #35495e;
+
+    @include max(sm) {
+      font-size: 1.4rem;
+    }
+  }
+
+  h5 {
+    font-size: 1.6rem;
+
+    @include max(sm) {
+      font-size: 1.3rem;
+    }
+  }
+
   p {
     line-height: 1.5rem;
     font-size: 1.1rem;
@@ -46,5 +69,32 @@ main.content {
   ul,
   ol {
     margin-left: 2rem;
+  }
+
+  li + li {
+    margin-top: 0.4em;
+  }
+
+  table {
+    tr {
+      td,
+      th {
+        padding: 0.6em 0.4em;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    color: var(--clr-orange-400);
+    text-decoration: underline;
+    transition: color 180ms ease-in;
+
+    &:hover {
+      color: var(--clr-orange-500);
+    }
   }
 }
