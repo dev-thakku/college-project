@@ -137,7 +137,91 @@ const deptData = [
       '<h4>Infrastructural Facilities</h4><p>The department is housed in Academic Block - 1 with</p><ol><li>Well-appointed three numbers of classrooms.</li><li>Mini seminar hall with online conferencing facility</li><li>Six numbers well-equipped laboratories </li></ol>',
     vision:
       '<h4>Vision of the Department</h4><p>Excel as a center of skill education in Electronics and Communication Engineering moulding professionals who sincerely strive for the betterment of themselves and society.</p><h4>Mission of the Department</h4><ul><li>To impart state of the art, knowledge, skill and attitude to the graduates ensuring sustainable development.</li><li>To develop adaptiveness for being competent to acquaint with the technological changes. </li></ul>',
-    faculties: [],
+    faculties: [
+      {
+        name: 'PREETHA P ',
+        image: 'https://gptcperumbavoor.ac.in/Staff/62.jpg',
+        tag: 'HOD',
+        designation: 'HOD in Electronics & Communication Engg.',
+        mobile: '9446314848',
+        email: 'preethajaikishen@gmail.com',
+        address: '',
+        qualifications: ['MTech'],
+        interests: [],
+      },
+      {
+        name: 'Vipin V',
+        image: 'https://gptcperumbavoor.ac.in/Staff/16.jpg',
+        designation: 'Lecturer',
+        mobile: '9847830579',
+        email: 'vpn_official@hotmail.com',
+        address: 'Rohini House Kottappuram Alangad P O Aluva Ernakulam 683511',
+        qualifications: ['M.Tech '],
+        interests: ['Optical Fiber'],
+      },
+      {
+        name: 'Rose Katharine A A',
+        image: 'http://gptcperumbavoor.ac.in/Staff/19.JPG',
+        designation: 'Lecturer in Electronics',
+        mobile: '9895279952',
+        email: 'rosekathe@gmail.com',
+        address: 'Arackal House; SRM Road, Pachalam P.O; Kochi -12',
+        qualifications: ['MTech in Electronics & Communication'],
+        interests: [],
+      },
+      {
+        name: 'Daisy Varghese',
+        image: 'https://gptcperumbavoor.ac.in/Staff/26.jpg',
+        designation: 'Lecturer in Electronics',
+        mobile: '9446459767',
+        email: 'daisyvarghese66@gmail.com ',
+        address:
+          'Parappuram, Ayathupady, Koovappady, Perumbavoor, Ernakulam, 683544',
+        qualifications: ['BTech', 'MTech'],
+        interests: ['Teaching', 'Reading'],
+      },
+      {
+        name: 'Anie Paul',
+        image: '',
+        designation: 'Lecturer',
+        mobile: '7558080613',
+        email: 'aniepaul213@gmail.com',
+        address: 'Anie Paul ,Lecturer in Electronics ,GPTC Perumbavoor',
+        qualifications: ['Diploma in Electronics'],
+        interests: ['Electronic Circuits'],
+      },
+      {
+        name: 'Shyja C P',
+        image: 'https://gptcperumbavoor.ac.in/Staff/32.jpg',
+        designation: 'Demonstrator in Electronics',
+        mobile: '9446814265 ',
+        email: 'cpshyja@gmail.com',
+        address: 'Mundekudy house, Valayanchirangara p o Vengola',
+        qualifications: ['Diploma in electronics', ' B tech in EC'],
+        interests: [],
+      },
+      {
+        name: 'Soya Varghese',
+        image: '',
+        designation: 'Trade Instructor, Electronics',
+        mobile: '9495675813',
+        email: 'soyanibu1@gmail.com',
+        address:
+          'Padayattil house,Iringole PO,Perumbavoor, Ernakulam (district)',
+        qualifications: ['Diploma in Electronics'],
+        interests: [],
+      },
+      {
+        name: 'JOSEPH BIJU M. G',
+        image: '',
+        designation: 'Tradeinstructor senior Gr',
+        mobile: '9961008770',
+        email: 'bijujmanjaly@gmail.com',
+        address: ['MANJALY house, PUSHPAKA road, VADUTHALA P. O., KOCHI 23'],
+        qualifications: ['ITC', 'B Com '],
+        interests: [],
+      },
+    ],
   },
   {
     name: 'Mechanical Engg.',
@@ -230,7 +314,7 @@ const deptData = [
 const queryString = window.location.search;
 const type = new URLSearchParams(queryString).get('type');
 
-if (type < deptData.length && type >= 0) {
+if (type && type < deptData.length && type >= 0) {
   document.getElementById('courses').remove();
 
   const selectedDep = deptData[type];
@@ -239,6 +323,9 @@ if (type < deptData.length && type >= 0) {
   if (selectedDep.name.length > 30) deptTitle.classList.add('long-title');
   document.querySelector('#dept-image').src = selectedDep.image;
   constructPage(selectedDep);
+} else {
+  document.getElementById('content').remove();
+  document.querySelector('nav.sec-nav').remove();
 }
 
 const navItems = document.querySelectorAll('.tab-link');
@@ -257,6 +344,11 @@ function handleTabClick(e) {
   window.history.pushState({ tab }, tab, `dept.html?${newURLParam.toString()}`);
   constructPage(deptData[type], tab);
 }
+
+window.addEventListener('popstate', () => {
+  const tab = window.history.state?.tab || 'about';
+  constructPage(deptData[type], tab);
+});
 
 function constructPage(dept, tab = '') {
   const contentContainer = document.querySelector('#content');
@@ -281,7 +373,6 @@ function constructPage(dept, tab = '') {
     case 'faculties':
       title = createTitle('Faculties');
       content = getFacultyContent(dept.faculties);
-      // content = getFacultyContent([]);
       break;
     case 'vision':
       title = createTitle('Vision and Mission');
