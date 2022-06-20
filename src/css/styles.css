@@ -1126,6 +1126,9 @@ address {
     -webkit-transform: translate(50%, -22px);
             transform: translate(50%, -22px);
   }
+  .dept-main section#content.content {
+    padding-left: 1rem !important;
+  }
 }
 
 #staff-container {
@@ -1155,7 +1158,7 @@ address {
   height: 100%;
   width: 100%;
   min-width: 250px;
-  max-width: 350px;
+  max-width: 320px;
   text-align: center;
   overflow: hidden;
 }
@@ -2835,6 +2838,7 @@ input#subscriber-email::placeholder {
 .banner .title h1 {
   font-family: "Play", sans-serif;
   font-size: 55px;
+  text-align: center;
 }
 .banner .title h1.long-title {
   font-size: 45px;

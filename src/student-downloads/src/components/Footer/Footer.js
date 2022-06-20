@@ -5,10 +5,6 @@ import './Footer.css';
 export default function Footer() {
   const [openedSection, setOpenedSection] = useState('');
 
-  function footerToggle(footerBtn) {
-    // footerBtn.classList.toggle('btnActive');
-    // footerBtn.nextElementSibling.classList.toggle('active');
-  }
 
   const handleFooterOpen = (id) => {
     setOpenedSection((prevId) => (prevId == id ? '' : id));
@@ -42,22 +38,25 @@ export default function Footer() {
             }`}
           >
             <li className="footer-link">
-              <a href="#">General Administration</a>
+              <a href="dept.html?type=0">General Administration</a>
             </li>
             <li className="footer-link">
-              <a href="#">General Department</a>
+              <a href="dept.html?type=1">General Department</a>
             </li>
             <li className="footer-link">
-              <a href="#">General Workshop</a>
+              <a href="dept.html?type=2">Computer Engineering</a>
             </li>
             <li className="footer-link">
-              <a href="#">Computer Engineering</a>
+              <a href="dept.html?type=3">Electronics & Communiction Engg.</a>
             </li>
             <li className="footer-link">
-              <a href="#">Electronics & Communiction Engg.</a>
+              <a href="dept.html?type=4">Mechanical Engineering</a>
             </li>
             <li className="footer-link">
-              <a href="#">Mechanical Engineering</a>
+              <a href="dept.html?type=5">General Workshop</a>
+            </li>
+            <li className="footer-link">
+              <a href="dept.html?type=6">Library</a>
             </li>
           </ul>
         </div>

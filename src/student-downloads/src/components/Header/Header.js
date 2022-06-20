@@ -7,11 +7,9 @@ export default function Header() {
     <header className="header" id="#">
       <div className="header-top">
         <div className="header-left">
-          <div className="header-logo">
-            {/* <img src="images/logo.png" alt="logo" /> */}
-            {/* <img src={Logo} alt="" /> */}
+          <a href="/" className="header-logo">
             <Logo />
-          </div>
+          </a>
           <div className="header-title">
             <h2>Govt. Polytechnic College</h2>
             <address>

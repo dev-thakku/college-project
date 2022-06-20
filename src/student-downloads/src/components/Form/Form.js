@@ -46,9 +46,11 @@ export default function Form({ setOptions }) {
     const queryParams = new URLSearchParams(window.location.search);
     const type = queryParams.get('type');
     const dept = queryParams.get('dept');
-    const sem = queryParams.get('sem');
+    const semester = queryParams.get('sem');
 
     setResourceType(type || 'all');
+    setDepartment(dept || 'ct');
+    setSemester(semester || 's1');
   }, []);
 
   useEffect(() => {
